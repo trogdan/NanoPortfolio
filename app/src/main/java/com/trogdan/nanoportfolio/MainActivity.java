@@ -14,13 +14,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button spotifyButton = (Button) findViewById(R.id.spotifyButton);
-        spotifyButton.setOnClickListener(
-                new Button.OnClickListener() {
-                    public void onClick(View v) {
-
-                    }
-                });
     }
 
     @Override
