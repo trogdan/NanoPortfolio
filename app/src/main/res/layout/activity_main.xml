@@ -21,7 +21,7 @@
             android:layout_weight="1"
             android:textSize="@dimen/abc_text_size_large_material"
             android:textColor="@color/abc_primary_text_material_light"
-            android:background="@color/lime_200"
+            android:background="@drawable/home_basic_button"
             android:layout_marginBottom="3dp"
             android:clickable="true" />
 
@@ -35,7 +35,7 @@
             android:layout_weight="1"
             android:textSize="@dimen/abc_text_size_large_material"
             android:textColor="@color/abc_primary_text_material_light"
-            android:background="@color/lime_200"
+            android:background="@drawable/home_basic_button"
             android:layout_marginTop="3dp"
             android:layout_marginBottom="3dp"
             android:clickable="true" />
@@ -49,7 +49,7 @@
             android:layout_weight="1"
             android:textSize="@dimen/abc_text_size_large_material"
             android:textColor="@color/abc_primary_text_material_light"
-            android:background="@color/lime_200"
+            android:background="@drawable/home_basic_button"
             android:layout_marginTop="3dp"
             android:layout_marginBottom="3dp"
             android:clickable="true" />
@@ -64,7 +64,7 @@
             android:layout_weight="1"
             android:textSize="@dimen/abc_text_size_large_material"
             android:textColor="@color/abc_primary_text_material_light"
-            android:background="@color/lime_200"
+            android:background="@drawable/home_basic_button"
             android:layout_marginTop="3dp"
             android:layout_marginBottom="3dp"
             android:clickable="true" />
@@ -80,7 +80,7 @@
             android:layout_weight="1"
             android:textSize="@dimen/abc_text_size_large_material"
             android:textColor="@color/abc_primary_text_material_light"
-            android:background="@color/lime_200"
+            android:background="@drawable/home_basic_button"
             android:layout_marginTop="3dp"
             android:layout_marginBottom="3dp"
             android:clickable="true" />
@@ -97,7 +97,7 @@
             android:elegantTextHeight="false"
             android:textColor="@color/abc_primary_text_material_light"
             android:layout_marginTop="3dp"
-            android:background="@color/teal_300"
+            android:background="@drawable/home_special_button"
             android:clickable="true" />
 
     </LinearLayout>
