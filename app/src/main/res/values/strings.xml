@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">Nano Portfolio</string>
     <string name="action_settings">Settings</string>
-    <string name="snackbar_text">I love marshmallow</string>
-    <string name="snackbar_action_dismiss">MOAR</string>
+    <string name="snackbar_spotify_text">Streamer will be boss</string>
+    <string name="snackbar_scores_text">Scores app, we\'ll see</string>
+    <string name="snackbar_library_text">Library app sounds neat</string>
+    <string name="snackbar_bigger_text">Built it how big?</string>
+    <string name="snackbar_xyz_text">Reader love</string>
+    <string name="snackbar_capstone_text">I love marshmallow</string>
+    <string name="snackbar_action_dismiss">Dismiss</string>
+
 </resources>

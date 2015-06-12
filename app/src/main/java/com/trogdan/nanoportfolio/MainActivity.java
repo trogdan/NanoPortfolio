@@ -17,13 +17,18 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+    //Will not change, but Android doesn't instantiate much of the object until onCreate, so no final
+    private View coordinatorLayoutView;
+    private Button[] buttons;
+    private int[] text_ids;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final View coordinatorLayoutView = findViewById(R.id.snackbarPosition);
-        final Button[] buttons = {
+        coordinatorLayoutView = findViewById(R.id.snackbarPosition);
+        buttons = new Button[]{
                 (Button) findViewById(R.id.spotifyButton),
                 (Button) findViewById(R.id.scoresButton),
                 (Button) findViewById(R.id.libraryButton),
@@ -32,13 +37,23 @@ public class MainActivity extends AppCompatActivity {
                 (Button) findViewById(R.id.capstoneButton)
         };
 
+        text_ids = new int[]{
+                R.string.snackbar_spotify_text,
+                R.string.snackbar_scores_text,
+                R.string.snackbar_library_text,
+                R.string.snackbar_bigger_text,
+                R.string.snackbar_xyz_text,
+                R.string.snackbar_capstone_text,
+        };
+
         for(int i = 0; i < buttons.length; i++)
         {
-            buttons[i].setOnClickListener(
+            final int index = i;
+            buttons[index].setOnClickListener(
                     new Button.OnClickListener() {
                         public void onClick(View v) {
                             Snackbar
-                                    .make(coordinatorLayoutView, R.string.snackbar_text, Snackbar.LENGTH_LONG)
+                                    .make(coordinatorLayoutView, text_ids[index], Snackbar.LENGTH_LONG)
                                     .setAction(R.string.snackbar_action_dismiss, defaultSnackbarListener)
                                     .setActionTextColor(getResources().getColor(R.color.amber_300))
                                     .show();
